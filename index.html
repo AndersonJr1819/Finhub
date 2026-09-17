@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinHub - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main class="login-container">
+        <section class="institutional-section">
+            <div class="bg-image-wrapper">
+                <img src="img/ChatGPT Image 17 de set. de 2026, 16_47_02.png" alt="Escritório corporativo moderno com vista para o skyline financeiro">
+            </div>
+            <div class="overlay-gradient"></div>
+
+            <header class="institutional-header">
+                <p class="brand-tagline">Consultoria Financeira</p>
+            </header>
+
+            <div class="institutional-content">
+                <p class="eyebrow-text">O seu negócio mais forte</p>
+                <h1 class="main-title">
+                    Decisões financeiras <span class="highlight">mais inteligentes.</span>
+                </h1>
+                <p class="institutional-description">
+                    A FinHub é uma consultoria financeira que ajuda sua empresa a crescer com planejamento, segurança e
+                    as melhores oportunidades do mercado.
+                </p>
+
+                <div class="benefits-list">
+                    <article class="benefit-item">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="benefit-texts">
+                            <h3>Gestão financeira completa</h3>
+                            <p>Tenha o controle total do seu negócio.</p>
+                        </div>
+                    </article>
+
+                    <article class="benefit-item">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="benefit-texts">
+                            <h3>Investimentos estratégicos</h3>
+                            <p>Mais rentabilidade para o seu futuro.</p>
+                        </div>
+                    </article>
+
+                    <article class="benefit-item">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <div class="benefit-texts">
+                            <h3>Consultoria especializada</h3>
+                            <p>Suporte de quem entende do seu mercado.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <footer class="institutional-footer">
+                <p>FINHUB &middot; PLANEJAMENTO &middot; CRESCIMENTO &middot; RESULTADOS</p>
+            </footer>
+        </section>
+
+        <section class="login-section">
+            <div class="login-top-banner">
+                <p>Juntos por um futuro financeiro mais sólido.</p>
+                <div class="banner-line" aria-hidden="true"></div>
+            </div>
+
+            <div class="login-form-container">
+                <header class="form-header">
+                    <h2>Bem-vindo de volta!</h2>
+                    <p>Acesse sua conta e continue gerenciando as finanças da sua empresa.</p>
+                </header>
+
+                <form class="login-form" action="#" method="POST">
+                    <div class="input-group">
+                        <label class="sr-only" for="cnpj">CNPJ da empresa</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon" aria-hidden="true">
+                                <i class="fa-solid fa-city"></i>
+                            </span>
+                            <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ da empresa"
+                                autocomplete="organization" required>
+                        </div>
+                        <span class="input-helper">Ex.: 12.345.678/0001-90</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="email">E-mail ou usuário</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon" aria-hidden="true">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <input type="text" id="email" name="email" placeholder="E-mail ou usuário"
+                                autocomplete="username" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="password">Senha</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon" aria-hidden="true">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input type="password" id="password" name="password" placeholder="Senha"
+                                autocomplete="current-password" required>
+                            <button type="button" class="password-toggle" aria-label="Mostrar ou ocultar senha">
+                                <i class="fa-regular fa-eye-slash" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember">
+                            <span>Lembrar de mim</span>
+                        </label>
+                        <a href="" class="forgot-link">Esqueceu sua senha?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <span>Entrar</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="divider" aria-hidden="true">
+                        <span>ou</span>
+                    </div>
+                </form>
+
+                <footer class="login-footer">
+                    <p>Ainda não tem uma conta? <a href="" class="register-link">Cadastre sua empresa agora.</a></p>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
