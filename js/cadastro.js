@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (email.includes('empresa')) {
                 window.location.href = 'empresa.html';
             } else {
-                window.location.href = 'dashboard.html';
+                window.location.href = 'index.html';
             }
         });
     }
