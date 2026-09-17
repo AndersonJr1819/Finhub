@@ -1,0 +1,362 @@
+@import url(../global.css);
+
+.recovery-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+}
+
+.recovery-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.recovery-brand-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-12) var(--space-16);
+    position: relative;
+    background: radial-gradient(circle at bottom left, rgba(39, 211, 178, 0.05) 0%, transparent 50%);
+}
+
+.recovery-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.recovery-brand-mark {
+    width: 28px;
+    height: 28px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xs);
+    position: relative;
+}
+
+.recovery-brand-mark::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background-color: var(--color-bg);
+    border-radius: 2px;
+}
+
+.recovery-brand-name {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.5px;
+    color: var(--color-text-primary);
+}
+
+.recovery-brand-name span:first-child {
+    color: var(--color-text-primary);
+}
+
+.recovery-brand-name span:last-child {
+    color: var(--color-primary);
+}
+
+.recovery-hero {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 520px;
+}
+
+.recovery-hero-title {
+    font-size: 44px;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-6);
+    display: flex;
+    flex-direction: column;
+}
+
+.recovery-hero-title span:last-child {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+.recovery-hero-description {
+    font-size: var(--font-size-md);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    max-width: 440px;
+}
+
+.recovery-visual {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: var(--z-base);
+}
+
+.recovery-visual-wave {
+    position: absolute;
+    bottom: -120px;
+    left: -100px;
+    width: 900px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px solid rgba(39, 211, 178, 0.25);
+    box-shadow: inset 0 20px 40px rgba(39, 211, 178, 0.1), 0 0 50px rgba(39, 211, 178, 0.15);
+    transform: rotate(-15deg);
+}
+
+.recovery-visual-glow {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 300px;
+    height: 150px;
+    background: radial-gradient(ellipse at center, rgba(39, 211, 178, 0.2) 0%, transparent 70%);
+    filter: blur(30px);
+}
+
+.recovery-message {
+    position: relative;
+    z-index: var(--z-sticky);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.recovery-message-line {
+    width: 32px;
+    height: 2px;
+    background-color: var(--color-border-strong);
+    margin-bottom: var(--space-2);
+}
+
+.recovery-message p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+    line-height: var(--line-height-tight);
+}
+
+.recovery-auth-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+    padding: var(--space-8);
+}
+
+.recovery-card {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8) var(--space-12);
+    box-shadow: var(--shadow-xl);
+}
+
+.recovery-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--space-6);
+}
+
+.recovery-card-header .recovery-brand {
+    margin-bottom: var(--space-6);
+}
+
+.recovery-card-header h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+    letter-spacing: -0.5px;
+}
+
+.recovery-card-header p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+}
+
+.recovery-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    position: relative;
+}
+
+.form-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.form-input-icon {
+    position: absolute;
+    top: 15px;
+    left: var(--space-4);
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C5CBD3'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.form-group input[type="email"] {
+    width: 100%;
+    height: 48px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 0 var(--space-4) 0 44px;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    transition: all var(--transition-fast);
+}
+
+.form-group input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-group input:hover {
+    border-color: var(--color-border-strong);
+}
+
+.form-group input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+.recovery-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    width: 100%;
+    height: 48px;
+    background: var(--gradient-primary);
+    color: var(--color-text-inverse);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: filter var(--transition-fast), transform var(--transition-fast);
+    box-shadow: 0 4px 12px rgba(39, 211, 178, 0.25);
+}
+
+.recovery-submit:hover {
+    filter: brightness(1.05);
+}
+
+.recovery-submit:active {
+    transform: scale(0.99);
+}
+
+.recovery-submit-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23050B14'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='M14 5l7 7m0 0l-7 7m7-7H3'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.recovery-divider {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin: var(--space-5) 0;
+}
+
+.recovery-divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-border);
+}
+
+.recovery-divider-text {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.recovery-login {
+    display: flex;
+    justify-content: center;
+}
+
+.recovery-login a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    width: 100%;
+    height: 48px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.recovery-login a:hover {
+    background-color: var(--color-surface-hover);
+    border-color: var(--color-border-strong);
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.recovery-login-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C5CBD3'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M10 19l-7-7m0 0l7-7m-7 7h18'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width: 1024px) {
+    .recovery-layout {
+        grid-template-columns: 1fr;
+    }
+    .recovery-brand-panel {
+        display: none;
+    }
+    .recovery-auth-panel {
+        padding: var(--space-4);
+    }
+    .recovery-card {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        padding: var(--space-4);
+    }
+}
