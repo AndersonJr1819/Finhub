@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin Hub | Meus investimentos</title>
+    <meta name="description" content="Acompanhe seus investimentos, patrimônio e rentabilidade na Fin Hub.">
+    <link rel="stylesheet" href="styles/styles/investimentos.css">
+    <script src="js/investimento.js" defer></script>
+</head>
+
+<body class="investments-page">
+    <aside class="investments-sidebar">
+        <div class="sidebar-brand">
+            <span class="sidebar-brand-mark"></span>
+            <span class="sidebar-brand-name">
+                <span>Fin</span><span>Hub</span>
+            </span>
+        </div>
+        <nav>
+            <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                    <a href="home.html" class="sidebar-menu-link">
+                        <span class="sidebar-menu-icon"></span>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-item active">
+                    <a href="investimentos.html" class="sidebar-menu-link">
+                        <span class="sidebar-menu-icon"></span>
+                        <span>Meus investimentos</span>
+                    </a>
+                </li>
+                
+            
+            </ul>
+        </nav>
+        <div class="sidebar-support">
+            <span class="sidebar-support-icon"></span>
+            <p>Conte com a Fin Hub para o seu futuro.</p>
+            <span class="sidebar-support-line"></span>
+        </div>
+    </aside>
+
+    <main class="investments-main">
+        <header class="investments-header">
+            <div class="investments-search">
+                <span class="dashboard-search-icon"></span>
+                <input type="search" id="investment-search" name="investment-search" placeholder="Buscar no sistema...">
+            </div>
+            <div class="investments-profile">
+                <button type="button" class="dashboard-notification-btn" aria-label="Notificações">
+                    <span class="dashboard-notification-icon"></span>
+                </button>
+                <div class="dashboard-user">
+                    <span class="dashboard-avatar"></span>
+                    <span class="dashboard-username"><span>Eduardo</span> <span>Nascimento</span></span>
+                    <span class="dashboard-profile-arrow"></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="investments-heading-wrapper">
+            <div class="investments-heading">
+                <h1>Meus <span>investimentos</span></h1>
+                <p>Acompanhe o desempenho dos seus investimentos e faça seu dinheiro render.</p>
+            </div>
+            <div class="investments-actions">
+                <button type="button">
+                    <span class="button-icon"></span>
+                    <span>Novo investimento</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="investments-grid-top">
+            <section class="investment-summary">
+                <div class="balance-header">
+                    <div class="balance-title-group">
+                        <h2>Meu patrimônio</h2>
+                        <button type="button" class="balance-visibility-btn"
+                            aria-label="Alternar visibilidade do saldo">
+                            <span class="balance-visibility-icon"></span>
+                        </button>
+                    </div>
+                    <div class="investment-period">
+                        <button type="button" class="active">1M</button>
+                        <button type="button">3M</button>
+                        <button type="button">6M</button>
+                        <button type="button">1A</button>
+                        <button type="button">Tudo</button>
+                    </div>
+                </div>
+                <div class="balance-amount-group">
+                    <span class="balance-currency">R$</span>
+                    <span class="balance-value">12.480,75</span>
+                </div>
+                <div class="balance-trend">
+                    <span class="balance-trend-icon"></span>
+                    <span class="balance-trend-value">+8,4%</span>
+                    <span class="balance-trend-text">em relação ao mês anterior</span>
+                </div>
+                <div class="investment-chart">
+                    <div class="balance-chart-y-axis">
+                        <span>14.000</span>
+                        <span>11.000</span>
+                        <span>8.000</span>
+                        <span>5.000</span>
+                        <span>2.000</span>
+                    </div>
+                    <div class="balance-chart-area">
+                        <div class="balance-chart-line"></div>
+                        <div class="balance-chart-fill"></div>
+                        <div class="balance-chart-point"></div>
+                    </div>
+                    <div class="balance-chart-x-axis">
+                        <span>Jan</span>
+                        <span>Fev</span>
+                        <span>Mar</span>
+                        <span>Abr</span>
+                        <span>Mai</span>
+                        <span>Jun</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="allocation-card">
+                <h2>Alocação dos investimentos</h2>
+                <div class="spending-content">
+                    <div class="allocation-chart">
+                        <div class="spending-chart-ring">
+                            <span class="spending-chart-center-value">100%</span>
+                            <span class="spending-chart-center-label">do total</span>
+                        </div>
+                    </div>
+                    <ul class="spending-legend">
+                        <li class="spending-legend-item">
+                            <span class="spending-legend-dot" style="background-color: #27D3B2;"></span>
+                            <span class="spending-legend-name">Renda Fixa</span>
+                            <span class="spending-legend-value">45%</span>
+                        </li>
+                        <li class="spending-legend-item">
+                            <span class="spending-legend-dot" style="background-color: #8B5CF6;"></span>
+                            <span class="spending-legend-name">Ações</span>
+                            <span class="spending-legend-value">25%</span>
+                        </li>
+                        <li class="spending-legend-item">
+                            <span class="spending-legend-dot" style="background-color: #6366F1;"></span>
+                            <span class="spending-legend-name">Fundos Imobiliários</span>
+                            <span class="spending-legend-value">15%</span>
+                        </li>
+                        <li class="spending-legend-item">
+                            <span class="spending-legend-dot" style="background-color: #3B82F6;"></span>
+                            <span class="spending-legend-name">Criptomoedas</span>
+                            <span class="spending-legend-value">10%</span>
+                        </li>
+                        <li class="spending-legend-item">
+                            <span class="spending-legend-dot" style="background-color: #06B6D4;"></span>
+                            <span class="spending-legend-name">Outros</span>
+                            <span class="spending-legend-value">5%</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="investment-metrics">
+                    <div class="metric-item">
+                        <span class="metric-title">Rentabilidade acumulada</span>
+                        <div class="metric-value-group">
+                            <span class="metric-trend-icon"></span>
+                            <span class="metric-value positive">+12,8%</span>
+                        </div>
+                        <span class="metric-desc">nos últimos 12 meses</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-title">Valor total investido</span>
+                        <div class="metric-value-group">
+                            <span class="metric-value">R$ 10.521,32</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="investments-grid-bottom">
+            <section class="investments-table-section">
+                <h2>Seus investimentos</h2>
+                <table class="investments-table">
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Tipo</th>
+                            <th>Valor aplicado</th>
+                            <th>Rentabilidade</th>
+                            <th>Saldo atual</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="investment-row">
+                            <td class="investment-asset">
+                                <span class="transaction-icon-wrapper"><span class="transaction-icon"></span></span>
+                                <div class="transaction-details">
+                                    <span class="transaction-name">Tesouro Selic</span>
+                                    <span class="transaction-category">BSRTH4</span>
+                                </div>
+                            </td>
+                            <td><span class="investment-type">Renda Fixa</span></td>
+                            <td><span class="investment-value-applied">R$ 3.000,00</span></td>
+                            <td><span class="investment-return positive">+6,2%</span></td>
+                            <td><span class="investment-current-balance">R$ 3.186,00</span></td>
+                            <td><span class="investment-arrow"></span></td>
+                        </tr>
+                        <tr class="investment-row">
+                            <td class="investment-asset">
+                                <span class="transaction-icon-wrapper"><span class="transaction-icon"></span></span>
+                                <div class="transaction-details">
+                                    <span class="transaction-name">Itaú Ações</span>
+                                    <span class="transaction-category">ITSA4</span>
+                                </div>
+                            </td>
+                            <td><span class="investment-type">Ações</span></td>
+                            <td><span class="investment-value-applied">R$ 2.500,00</span></td>
+                            <td><span class="investment-return positive">+14,8%</span></td>
+                            <td><span class="investment-current-balance">R$ 2.870,00</span></td>
+                            <td><span class="investment-arrow"></span></td>
+                        </tr>
+                        <tr class="investment-row">
+                            <td class="investment-asset">
+                                <span class="transaction-icon-wrapper"><span class="transaction-icon"></span></span>
+                                <div class="transaction-details">
+                                    <span class="transaction-name">FII XP Malls</span>
+                                    <span class="transaction-category">XPML11</span>
+                                </div>
+                            </td>
+                            <td><span class="investment-type">Fundos Imobiliários</span></td>
+                            <td><span class="investment-value-applied">R$ 2.000,00</span></td>
+                            <td><span class="investment-return positive">+9,6%</span></td>
+                            <td><span class="investment-current-balance">R$ 2.192,00</span></td>
+                            <td><span class="investment-arrow"></span></td>
+                        </tr>
+                        <tr class="investment-row">
+                            <td class="investment-asset">
+                                <span class="transaction-icon-wrapper"><span class="transaction-icon"></span></span>
+                                <div class="transaction-details">
+                                    <span class="transaction-name">Bitcoin</span>
+                                    <span class="transaction-category">BTC</span>
+                                </div>
+                            </td>
+                            <td><span class="investment-type">Criptomoedas</span></td>
+                            <td><span class="investment-value-applied">R$ 1.500,00</span></td>
+                            <td><span class="investment-return positive">+22,4%</span></td>
+                            <td><span class="investment-current-balance">R$ 1.836,75</span></td>
+                            <td><span class="investment-arrow"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article class="investment-promotion">
+                <div class="motivation-content">
+                    <span class="planning-icon"></span>
+                    <h2 class="motivation-title">Invista no seu <span>futuro</span></h2>
+                    <p class="motivation-subtitle">Diversifique seus investimentos e construa um patrimônio sólido a
+                        longo prazo.</p>
+                    <button type="button" class="promo-btn">
+                        <span>Saiba mais</span>
+                        <span class="promo-btn-arrow"></span>
+                    </button>
+                </div>
+                <div class="motivation-visual">
+                    <span class="motivation-line"></span>
+                    <span class="motivation-wave"></span>
+                    <span class="promo-curve-1"></span>
+                    <span class="promo-curve-2"></span>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
